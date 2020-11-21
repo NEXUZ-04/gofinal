@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"database/sql"
+	"github.com/NEXUZ-04/gofinal/database"
+)
+
+var Database DB
 
 func main() {
-	fmt.Println("customer service")
-	//run port ":2009"
+
+	err := Database.Connect()
+	
 }
